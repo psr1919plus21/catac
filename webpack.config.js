@@ -9,10 +9,11 @@ var APP_DIR = path.resolve(__dirname, './src/client');
 
 const config = {
    entry: {
-     main: APP_DIR + '/index.js'
+     main: APP_DIR + '/index.js',
+     info: APP_DIR + '/info.js'
    },
    output: {
-     filename: 'bundle.js',
+     filename: '[name].js',
      path: BUILD_DIR,
    },
    module: {
@@ -47,7 +48,7 @@ const config = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin("styles.css"),
+    new ExtractTextPlugin("[name].css"),
     new SpriteLoaderPlugin()
   ]
 };
