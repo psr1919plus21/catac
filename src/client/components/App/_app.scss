@@ -13,3 +13,34 @@ body {
     color: #fff;
   }
 }
+
+
+.cat,
+.cat1,
+.cat2,
+.cat3 {
+  border: 1px dashed #f7f7f7;
+  height: 200px;
+  width: 200px;
+}
+
+.cat-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cat {
+  background: url('../../static/img/svg/cat.svg') no-repeat center;
+}
+
+.cat1 {
+  background: url('../../static/img/svg/cat1.svg') no-repeat center;
+}
+
+.cat2 {
+  background: url('../../static/img/svg/cat2.svg') no-repeat center;
+}
+
+.cat3 {
+  background: url('../../static/img/svg/cat3.svg') no-repeat center;
+}
