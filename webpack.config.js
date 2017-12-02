@@ -37,16 +37,18 @@ const config = {
      },
 
      {
-      test: /\.svg$/,
-      loader: 'svg-sprite-loader',
-      include: path.resolve('./src/client/static/img/svg/'),
-      options: {
-        extract: true,
-        spriteFilename: 'cats.svg'
-      }
+       test: /\.(jpg|png|svg)/,
+       use: 'file-loader'
      }
+
+
     ],
   },
+
+  resolve: {
+    extensions: ['.js', '.jsx', '.scss']
+  },
+
   plugins: [
     new ExtractTextPlugin("[name].css"),
     new SpriteLoaderPlugin()

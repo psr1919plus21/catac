@@ -1,0 +1,42 @@
+$header-bg: #333;
+$color-white: #fff;
+
+.header {
+  background: $header-bg;
+  padding-bottom: 16px;
+  padding-top: 16px;
+
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__title {
+  color: $color-white;
+  font-size: 24px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list__item {
+  color: $color-white;
+  cursor: pointer;
+  opacity: .6;
+  margin-right: 16px;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
